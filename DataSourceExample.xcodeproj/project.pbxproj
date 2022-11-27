@@ -29,6 +29,8 @@
 		2F6F36C72933EE25009F357A /* Applicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36C62933EE25009F357A /* Applicable.swift */; };
 		2F6F36C92933EE96009F357A /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36C82933EE96009F357A /* Runnable.swift */; };
 		2F6F36CB2933EF12009F357A /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */; };
+		2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36D02933F1D4009F357A /* TableViewWrapperCell.swift */; };
+		2F6F36D42933F2F2009F357A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F6F36D32933F2F2009F357A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,7 @@
 		2F6F36C62933EE25009F357A /* Applicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicable.swift; sourceTree = "<group>"; };
 		2F6F36C82933EE96009F357A /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 		2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
+		2F6F36D02933F1D4009F357A /* TableViewWrapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWrapperCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				2F6F36A52933D54F009F357A /* Differentiator in Frameworks */,
 				2F6F36A22933D488009F357A /* RxSwift in Frameworks */,
 				2F6F36A02933D488009F357A /* RxRelay in Frameworks */,
+				2F6F36D42933F2F2009F357A /* SnapKit in Frameworks */,
 				2F6F36A72933D54F009F357A /* RxDataSources in Frameworks */,
 				2F6F369E2933D488009F357A /* RxCocoa in Frameworks */,
 			);
@@ -90,7 +94,7 @@
 			children = (
 				2F6F369B2933D0A8009F357A /* App */,
 				2F6F36A82933E234009F357A /* Tools */,
-				2F6F36892933CB65009F357A /* ViewController.swift */,
+				2F6F36CC2933F0AE009F357A /* UI */,
 				2F6F36992933CBCD009F357A /* SupportedFiles */,
 			);
 			path = DataSourceExample;
@@ -198,6 +202,39 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2F6F36CC2933F0AE009F357A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36CD2933F0B8009F357A /* Components */,
+				2F6F36CE2933F0BF009F357A /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F6F36CD2933F0B8009F357A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36CF2933F1A5009F357A /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F6F36CE2933F0BF009F357A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36892933CB65009F357A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F6F36CF2933F1A5009F357A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36D02933F1D4009F357A /* TableViewWrapperCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +258,7 @@
 				2F6F36A12933D488009F357A /* RxSwift */,
 				2F6F36A42933D54F009F357A /* Differentiator */,
 				2F6F36A62933D54F009F357A /* RxDataSources */,
+				2F6F36D32933F2F2009F357A /* SnapKit */,
 			);
 			productName = DataSourceExample;
 			productReference = 2F6F36822933CB65009F357A /* DataSourceExample.app */;
@@ -253,6 +291,7 @@
 			packageReferences = (
 				2F6F369C2933D488009F357A /* XCRemoteSwiftPackageReference "RxSwift" */,
 				2F6F36A32933D54F009F357A /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				2F6F36D22933F2F2009F357A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 2F6F36832933CB65009F357A /* Products */;
 			projectDirPath = "";
@@ -310,6 +349,7 @@
 				2F6F36BB2933EB9E009F357A /* UnitType.swift in Sources */,
 				2F6F36C92933EE96009F357A /* Runnable.swift in Sources */,
 				2F6F36BA2933EB83009F357A /* ViewModelType.swift in Sources */,
+				2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */,
 				2F6F36882933CB65009F357A /* SceneDelegate.swift in Sources */,
 				2F6F36BC2933EB9E009F357A /* SimpleUnit.swift in Sources */,
 				2F6F36BD2933EBC2009F357A /* ReactiveReusable.swift in Sources */,
@@ -541,6 +581,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		2F6F36D22933F2F2009F357A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -568,6 +616,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F6F36A32933D54F009F357A /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		2F6F36D32933F2F2009F357A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F6F36D22933F2F2009F357A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
