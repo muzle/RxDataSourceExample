@@ -25,6 +25,10 @@
 		2F6F36BD2933EBC2009F357A /* ReactiveReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36B32933E947009F357A /* ReactiveReusable.swift */; };
 		2F6F36BF2933EBC2009F357A /* EventTrackerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36B12933E947009F357A /* EventTrackerType.swift */; };
 		2F6F36C02933EBC2009F357A /* AnyEventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36B02933E947009F357A /* AnyEventTracker.swift */; };
+		2F6F36C42933ED9E009F357A /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36C32933ED9E009F357A /* UITableView+extension.swift */; };
+		2F6F36C72933EE25009F357A /* Applicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36C62933EE25009F357A /* Applicable.swift */; };
+		2F6F36C92933EE96009F357A /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36C82933EE96009F357A /* Runnable.swift */; };
+		2F6F36CB2933EF12009F357A /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		2F6F36B32933E947009F357A /* ReactiveReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveReusable.swift; sourceTree = "<group>"; };
 		2F6F36B52933E947009F357A /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 		2F6F36B62933E947009F357A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		2F6F36C32933ED9E009F357A /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		2F6F36C62933EE25009F357A /* Applicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicable.swift; sourceTree = "<group>"; };
+		2F6F36C82933EE96009F357A /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
+		2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				2F6F36A92933E26F009F357A /* MVVM+Support */,
+				2F6F36C12933ED25009F357A /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -160,6 +169,33 @@
 				2F6F36B52933E947009F357A /* AnyViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F6F36C12933ED25009F357A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36C52933EE10009F357A /* Helpers */,
+				2F6F36C22933ED43009F357A /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F6F36C22933ED43009F357A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36C32933ED9E009F357A /* UITableView+extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2F6F36C52933EE10009F357A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36C62933EE25009F357A /* Applicable.swift */,
+				2F6F36C82933EE96009F357A /* Runnable.swift */,
+				2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6F36CB2933EF12009F357A /* ClassNameProtocol.swift in Sources */,
 				2F6F368A2933CB65009F357A /* ViewController.swift in Sources */,
+				2F6F36C72933EE25009F357A /* Applicable.swift in Sources */,
 				2F6F36862933CB65009F357A /* AppDelegate.swift in Sources */,
 				2F6F36BF2933EBC2009F357A /* EventTrackerType.swift in Sources */,
+				2F6F36C42933ED9E009F357A /* UITableView+extension.swift in Sources */,
 				2F6F36BB2933EB9E009F357A /* UnitType.swift in Sources */,
+				2F6F36C92933EE96009F357A /* Runnable.swift in Sources */,
 				2F6F36BA2933EB83009F357A /* ViewModelType.swift in Sources */,
 				2F6F36882933CB65009F357A /* SceneDelegate.swift in Sources */,
 				2F6F36BC2933EB9E009F357A /* SimpleUnit.swift in Sources */,
