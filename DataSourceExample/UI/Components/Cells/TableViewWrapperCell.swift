@@ -3,7 +3,7 @@ import SnapKit
 
 class TableViewWrapperCell<ContentView: UIView>: UITableViewCell {
     
-    // MARK: - Properties 
+    // MARK: - Properties
     
     lazy var cellContentView = ContentView(frame: bounds)
     

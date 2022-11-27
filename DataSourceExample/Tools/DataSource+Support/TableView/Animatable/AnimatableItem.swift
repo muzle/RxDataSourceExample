@@ -20,7 +20,7 @@ class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellMo
     // MARK: - Protocol methods
     
     static func == (
-        lhs: AnimatableItem<Cell>, 
+        lhs: AnimatableItem<Cell>,
         rhs: AnimatableItem<Cell>
     ) -> Bool {
         lhs.identity == rhs.identity
