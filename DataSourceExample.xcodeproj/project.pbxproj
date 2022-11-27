@@ -31,6 +31,9 @@
 		2F6F36CB2933EF12009F357A /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */; };
 		2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36D02933F1D4009F357A /* TableViewWrapperCell.swift */; };
 		2F6F36D42933F2F2009F357A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F6F36D32933F2F2009F357A /* SnapKit */; };
+		2F6F36D92933F7B0009F357A /* AnimatableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36D82933F7B0009F357A /* AnimatableSection.swift */; };
+		2F6F36DB2933F7C3009F357A /* AnimatableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36DA2933F7C3009F357A /* AnimatableItem.swift */; };
+		2F6F36DD2934036D009F357A /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F36DC2934036D009F357A /* TableViewCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		2F6F36C82933EE96009F357A /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 		2F6F36CA2933EF12009F357A /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
 		2F6F36D02933F1D4009F357A /* TableViewWrapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWrapperCell.swift; sourceTree = "<group>"; };
+		2F6F36D82933F7B0009F357A /* AnimatableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableSection.swift; sourceTree = "<group>"; };
+		2F6F36DA2933F7C3009F357A /* AnimatableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableItem.swift; sourceTree = "<group>"; };
+		2F6F36DC2934036D009F357A /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2F6F36A92933E26F009F357A /* MVVM+Support */,
+				2F6F36D52933F67D009F357A /* DataSource+Support */,
 				2F6F36C12933ED25009F357A /* Extension */,
 			);
 			path = Tools;
@@ -235,6 +242,32 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2F6F36D52933F67D009F357A /* DataSource+Support */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36DE29340A4E009F357A /* TableView */,
+			);
+			path = "DataSource+Support";
+			sourceTree = "<group>";
+		};
+		2F6F36D62933F782009F357A /* Animatable */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36DA2933F7C3009F357A /* AnimatableItem.swift */,
+				2F6F36D82933F7B0009F357A /* AnimatableSection.swift */,
+			);
+			path = Animatable;
+			sourceTree = "<group>";
+		};
+		2F6F36DE29340A4E009F357A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F36DC2934036D009F357A /* TableViewCellModel.swift */,
+				2F6F36D62933F782009F357A /* Animatable */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,13 +376,16 @@
 				2F6F36CB2933EF12009F357A /* ClassNameProtocol.swift in Sources */,
 				2F6F368A2933CB65009F357A /* ViewController.swift in Sources */,
 				2F6F36C72933EE25009F357A /* Applicable.swift in Sources */,
+				2F6F36D92933F7B0009F357A /* AnimatableSection.swift in Sources */,
 				2F6F36862933CB65009F357A /* AppDelegate.swift in Sources */,
 				2F6F36BF2933EBC2009F357A /* EventTrackerType.swift in Sources */,
 				2F6F36C42933ED9E009F357A /* UITableView+extension.swift in Sources */,
 				2F6F36BB2933EB9E009F357A /* UnitType.swift in Sources */,
 				2F6F36C92933EE96009F357A /* Runnable.swift in Sources */,
 				2F6F36BA2933EB83009F357A /* ViewModelType.swift in Sources */,
+				2F6F36DB2933F7C3009F357A /* AnimatableItem.swift in Sources */,
 				2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */,
+				2F6F36DD2934036D009F357A /* TableViewCellModel.swift in Sources */,
 				2F6F36882933CB65009F357A /* SceneDelegate.swift in Sources */,
 				2F6F36BC2933EB9E009F357A /* SimpleUnit.swift in Sources */,
 				2F6F36BD2933EBC2009F357A /* ReactiveReusable.swift in Sources */,

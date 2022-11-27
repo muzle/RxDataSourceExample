@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxDataSources
 
 class ViewController: UIViewController {
 
