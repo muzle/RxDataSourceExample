@@ -85,6 +85,8 @@ extension ButtonsScene {
     }
     
     func setupViews() {
+        navigationItem.title = "Test cells"
+        
         tableView.run {
             $0.refreshControl = refreshControl
             $0.register(FCell.self)
