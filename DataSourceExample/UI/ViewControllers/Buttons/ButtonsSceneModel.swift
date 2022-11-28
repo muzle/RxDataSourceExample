@@ -51,9 +51,13 @@ private extension ButtonsSceneModel {
         switch type {
         case .one:
             let model = makeOneButtonModel()
+            let eventTracker = AnyEventTracker<CellEvent> { event in
+                print("cell event: \(event)")
+            }
             let item = AnimatableItem<TableViewWrapperCell<OneButtonView>>(
                 identity: UUID().uuidString,
-                viewModel: model
+                viewModel: model,
+                eventTracker: eventTracker
             )
             return item.asAnyAnimatableItem()
         case .two:

@@ -8,4 +8,6 @@ protocol TableViewCellModelProtocol {
         tableView: UITableView,
         indexPath: IndexPath
     ) -> UITableViewCell
+    
+    func track(event: CellEvent)
 }

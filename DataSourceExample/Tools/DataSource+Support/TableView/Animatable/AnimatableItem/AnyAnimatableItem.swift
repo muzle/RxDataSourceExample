@@ -26,6 +26,10 @@ struct AnyAnimatableItem: AnimatableItemProtocol {
         item.cell(tableView: tableView, indexPath: indexPath)
     }
     
+    func track(event: CellEvent) {
+        item.track(event: event)
+    }
+    
     static func == (lhs: Self, rhs: Self) -> Bool {
         lhs.equatableBox.isEqual(to: rhs.equatableBox)
     }

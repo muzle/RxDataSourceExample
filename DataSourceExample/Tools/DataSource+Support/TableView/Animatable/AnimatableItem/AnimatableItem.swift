@@ -2,7 +2,7 @@ import UIKit
 import RxDataSources
 
 class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellModel<Cell>, AnimatableItemProtocol {
-
+    
     // MARK: - Properties
     
     let identity: String
@@ -11,10 +11,16 @@ class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellMo
     
     init(
         identity: String,
-        viewModel: Cell.ViewModel
+        viewModel: Cell.ViewModel,
+        selectionStyle: UITableViewCell.SelectionStyle = .none,
+        eventTracker: EventTracker? = nil
     ) {
         self.identity = identity
-        super.init(viewModel: viewModel)
+        super.init(
+            viewModel: viewModel,
+            selectionStyle: selectionStyle,
+            eventTracker: eventTracker
+        )
     }
     
     // MARK: - Protocol methods

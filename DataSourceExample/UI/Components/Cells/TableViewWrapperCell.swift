@@ -7,7 +7,7 @@ class TableViewWrapperCell<ContentView: UIView>: UITableViewCell {
     
     lazy var cellContentView = ContentView(frame: bounds)
     
-    var cellContentViewInset = UIEdgeInsets.zero {
+    var cellContentViewInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16) {
         willSet {
             guard newValue != cellContentViewInset else { return }
             cellContentView.snp.remakeConstraints {

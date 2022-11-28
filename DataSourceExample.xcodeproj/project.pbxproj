@@ -51,6 +51,8 @@
 		2F6F370729342339009F357A /* AnyAnimatableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370629342339009F357A /* AnyAnimatableSection.swift */; };
 		2F6F370929342536009F357A /* AnimatableItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370829342536009F357A /* AnimatableItemProtocol.swift */; };
 		2F6F370B293436F6009F357A /* AnyAnimatableSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370A293436F6009F357A /* AnyAnimatableSections.swift */; };
+		2F6F370E293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */; };
+		2F6F371129345781009F357A /* CellEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F371029345781009F357A /* CellEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		2F6F370629342339009F357A /* AnyAnimatableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnimatableSection.swift; sourceTree = "<group>"; };
 		2F6F370829342536009F357A /* AnimatableItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableItemProtocol.swift; sourceTree = "<group>"; };
 		2F6F370A293436F6009F357A /* AnyAnimatableSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnimatableSections.swift; sourceTree = "<group>"; };
+		2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimatedAndInteractedDataSource.swift; sourceTree = "<group>"; };
+		2F6F371029345781009F357A /* CellEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +285,7 @@
 		2F6F36D52933F67D009F357A /* DataSource+Support */ = {
 			isa = PBXGroup;
 			children = (
+				2F6F370F29345762009F357A /* EventTracker */,
 				2F6F36DE29340A4E009F357A /* TableView */,
 			);
 			path = "DataSource+Support";
@@ -289,6 +294,7 @@
 		2F6F36D62933F782009F357A /* Animatable */ = {
 			isa = PBXGroup;
 			children = (
+				2F6F370C2934555E009F357A /* DataSource */,
 				2F6F370229342281009F357A /* AnimatableItem */,
 				2F6F370529342327009F357A /* AnimatableSection */,
 			);
@@ -389,6 +395,22 @@
 				2F6F370A293436F6009F357A /* AnyAnimatableSections.swift */,
 			);
 			path = AnimatableSection;
+			sourceTree = "<group>";
+		};
+		2F6F370C2934555E009F357A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2F6F370F29345762009F357A /* EventTracker */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F371029345781009F357A /* CellEvent.swift */,
+			);
+			path = EventTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,7 +530,9 @@
 				2F6F36BB2933EB9E009F357A /* UnitType.swift in Sources */,
 				2F6F36C92933EE96009F357A /* Runnable.swift in Sources */,
 				2F6F36BA2933EB83009F357A /* ViewModelType.swift in Sources */,
+				2F6F370E293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift in Sources */,
 				2F6F36DB2933F7C3009F357A /* AnimatableItem.swift in Sources */,
+				2F6F371129345781009F357A /* CellEvent.swift in Sources */,
 				2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */,
 				2F6F3701293421F6009F357A /* TableViewCellModelProtocol.swift in Sources */,
 				2F6F36F229341B2E009F357A /* TwoButtonViewModel.swift in Sources */,

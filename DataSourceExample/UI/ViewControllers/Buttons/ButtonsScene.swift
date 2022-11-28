@@ -50,12 +50,15 @@ extension ButtonsScene {
         )
         let output = viewModel.transform(input: input)
         
-        dataSource = RxTableViewSectionedAnimatedDataSource<AnyAnimatableSection>(
+        dataSource = TableViewAnimatedAndInteractedDataSource(
             animationConfiguration: AnimationConfiguration(reloadAnimation: .top),
             configureCell: { _, tableView, indexPath, item in
                 item.cell(tableView: tableView, indexPath: indexPath)
             },
-            titleForHeaderInSection: { dataSource, section in dataSource[section].header }
+            titleForHeaderInSection: { dataSource, section in dataSource[section].header },
+            canMoveRowAtIndexPath: { _, _ in
+                true
+            }
         )
         
         disposeBag.insert(
