@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene).apply {
-            $0.rootViewController = ViewController()
+            $0.rootViewController = makeButtonsScene()
             $0.makeKeyAndVisible()
         }
     }
@@ -41,5 +41,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidEnterBackground(_ scene: UIScene) {
 
+    }
+    
+    // MARK: - Test methods
+    
+    private func makeButtonsScene() -> UIViewController {
+        let viewModel = ButtonsSceneModel()
+        let viewController = ButtonsScene()
+        viewController.viewModel = viewModel.asAnyViewModel()
+        return UINavigationController(rootViewController: viewController)
     }
 }

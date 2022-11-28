@@ -26,3 +26,11 @@ class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellMo
         lhs.identity == rhs.identity
     }
 }
+
+// MARK: - Default implementation
+
+extension AnimatableItem {
+    func asAnyAnimatableItem() -> AnyAnimatableItem {
+        AnyAnimatableItem(item: self)
+    }
+}

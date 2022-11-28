@@ -51,6 +51,7 @@ private extension TwoButtonView {
         let buttonsStackView = UIStackView(arrangedSubviews: [firstButton, secondButton]).apply {
             $0.axis = .horizontal
             $0.spacing = Constants.buttonsStackViewSpacing
+            $0.distribution = .fillEqually
         }
         let stackView = UIStackView(arrangedSubviews: [label, buttonsStackView]).apply {
             $0.axis = .vertical
@@ -71,7 +72,7 @@ private extension TwoButtonView {
         }
         
         [firstButton, secondButton].forEach {
-            $0.backgroundColor = .blue
+            $0.backgroundColor = .red
             $0.layer.cornerRadius = Constants.buttonCornerRadius
         }
     }

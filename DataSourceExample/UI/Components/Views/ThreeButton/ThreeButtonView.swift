@@ -52,6 +52,7 @@ private extension ThreeButtonView {
         let buttonsStackView = UIStackView(arrangedSubviews: [firstButton, secondButton, thirdButton]).apply {
             $0.axis = .horizontal
             $0.spacing = Constants.buttonsStackViewSpacing
+            $0.distribution = .fillEqually
         }
         let stackView = UIStackView(arrangedSubviews: [label, buttonsStackView]).apply {
             $0.axis = .vertical
@@ -72,7 +73,7 @@ private extension ThreeButtonView {
         }
         
         [firstButton, secondButton, thirdButton].forEach {
-            $0.backgroundColor = .blue
+            $0.backgroundColor = .green
             $0.layer.cornerRadius = Constants.buttonCornerRadius
         }
     }
