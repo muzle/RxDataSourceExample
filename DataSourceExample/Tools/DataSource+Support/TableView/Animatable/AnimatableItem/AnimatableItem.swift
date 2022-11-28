@@ -1,7 +1,7 @@
 import UIKit
 import RxDataSources
 
-class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellModel<Cell>, IdentifiableType, Equatable {
+class AnimatableItem<Cell: UITableViewCell & ViewModelBindable>: TableViewCellModel<Cell>, AnimatableItemProtocol {
 
     // MARK: - Properties
     

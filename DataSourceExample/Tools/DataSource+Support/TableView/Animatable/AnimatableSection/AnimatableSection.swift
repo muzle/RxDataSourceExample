@@ -1,7 +1,7 @@
 import Foundation
 import RxDataSources
 
-struct AnimatableSection<Item: IdentifiableType & Hashable>: AnimatableSectionModelType {
+struct AnimatableSection<Item: AnimatableItemProtocol>: AnimatableSectionModelType {
     
     // MARK: - Properties
     
