@@ -50,7 +50,7 @@ extension ButtonsScene {
         )
         let output = viewModel.transform(input: input)
         
-        dataSource = TableViewAnimatedAndInteractedDataSource(
+        dataSource = TableViewAnimatedDataSource(
             animationConfiguration: AnimationConfiguration(reloadAnimation: .top),
             configureCell: { _, tableView, indexPath, item in
                 item.cell(tableView: tableView, indexPath: indexPath)

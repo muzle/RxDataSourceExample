@@ -51,8 +51,9 @@
 		2F6F370729342339009F357A /* AnyAnimatableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370629342339009F357A /* AnyAnimatableSection.swift */; };
 		2F6F370929342536009F357A /* AnimatableItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370829342536009F357A /* AnimatableItemProtocol.swift */; };
 		2F6F370B293436F6009F357A /* AnyAnimatableSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370A293436F6009F357A /* AnyAnimatableSections.swift */; };
-		2F6F370E293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */; };
+		2F6F370E293455DA009F357A /* TableViewAnimatedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F370D293455DA009F357A /* TableViewAnimatedDataSource.swift */; };
 		2F6F371129345781009F357A /* CellEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F371029345781009F357A /* CellEvent.swift */; };
+		2FABB5FB2934D3AD0071F232 /* TableViewInteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABB5FA2934D3AD0071F232 /* TableViewInteractionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,8 +97,9 @@
 		2F6F370629342339009F357A /* AnyAnimatableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnimatableSection.swift; sourceTree = "<group>"; };
 		2F6F370829342536009F357A /* AnimatableItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableItemProtocol.swift; sourceTree = "<group>"; };
 		2F6F370A293436F6009F357A /* AnyAnimatableSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnimatableSections.swift; sourceTree = "<group>"; };
-		2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimatedAndInteractedDataSource.swift; sourceTree = "<group>"; };
+		2F6F370D293455DA009F357A /* TableViewAnimatedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimatedDataSource.swift; sourceTree = "<group>"; };
 		2F6F371029345781009F357A /* CellEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEvent.swift; sourceTree = "<group>"; };
+		2FABB5FA2934D3AD0071F232 /* TableViewInteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewInteractionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 		2F6F36DE29340A4E009F357A /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				2FABB5FC2934D3B40071F232 /* Interaction */,
 				2F6F36FF293421EA009F357A /* TableViewCellModel */,
 				2F6F36D62933F782009F357A /* Animatable */,
 			);
@@ -400,7 +403,7 @@
 		2F6F370C2934555E009F357A /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F370D293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift */,
+				2F6F370D293455DA009F357A /* TableViewAnimatedDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -411,6 +414,14 @@
 				2F6F371029345781009F357A /* CellEvent.swift */,
 			);
 			path = EventTracker;
+			sourceTree = "<group>";
+		};
+		2FABB5FC2934D3B40071F232 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				2FABB5FA2934D3AD0071F232 /* TableViewInteractionManager.swift */,
+			);
+			path = Interaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,7 +541,7 @@
 				2F6F36BB2933EB9E009F357A /* UnitType.swift in Sources */,
 				2F6F36C92933EE96009F357A /* Runnable.swift in Sources */,
 				2F6F36BA2933EB83009F357A /* ViewModelType.swift in Sources */,
-				2F6F370E293455DA009F357A /* TableViewAnimatedAndInteractedDataSource.swift in Sources */,
+				2F6F370E293455DA009F357A /* TableViewAnimatedDataSource.swift in Sources */,
 				2F6F36DB2933F7C3009F357A /* AnimatableItem.swift in Sources */,
 				2F6F371129345781009F357A /* CellEvent.swift in Sources */,
 				2F6F36D12933F1D4009F357A /* TableViewWrapperCell.swift in Sources */,
@@ -549,6 +560,7 @@
 				2F6F36F029341B24009F357A /* TwoButtonUnit.swift in Sources */,
 				2F6F36FA2934209C009F357A /* ButtonsScene.swift in Sources */,
 				2F6F36C02933EBC2009F357A /* AnyEventTracker.swift in Sources */,
+				2FABB5FB2934D3AD0071F232 /* TableViewInteractionManager.swift in Sources */,
 				2F6F36E5293412D6009F357A /* OneButtonView.swift in Sources */,
 				2F6F370B293436F6009F357A /* AnyAnimatableSections.swift in Sources */,
 				2F6F36F429341C96009F357A /* ThreeButtonView.swift in Sources */,
